@@ -1,0 +1,3 @@
+Building a project using Spring initializer
+Adding OpenAPi Key
+creating Profile emtity
