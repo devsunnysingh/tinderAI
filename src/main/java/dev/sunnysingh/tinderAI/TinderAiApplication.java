@@ -27,9 +27,15 @@ public class TinderAiApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		profileRepository.deleteAll();
+		conversationRepository.deleteAll();
 		System.out.println("My application is Running");
 		Profile profile=new Profile("1",
 				"John","Skully", 40,
+				"Indian", Gender.Male,"Softwaredev",
+				"foo.jpg", "INFJ");
+		Profile profile2=new Profile("2",
+				"Foo","Baar", 40,
 				"Indian", Gender.Male,"Softwaredev",
 				"foo.jpg", "INFJ");
 		profileRepository.save(profile);
